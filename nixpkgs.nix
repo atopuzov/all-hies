@@ -1,4 +1,5 @@
-import (fetchTarball {
-  url = "https://github.com/NixOS/nixpkgs/tarball/acbdaa569f4ee387386ebe1b9e60b9f95b4ab21b";
-  sha256 = "0xzyghyxk3hwhicgdbi8yv8b8ijy1rgdsj5wb26y5j322v96zlpz";
+import (builtins.fetchGit {
+  url = "https://github.com/NixOS/nixpkgs-channels";
+  rev = "6d68b920eb2df73d68a9355f9d572dbf97add5f5";
+  ref = "nixos-20.03";
 }) {}
